@@ -21,7 +21,8 @@
                     <a data-v-390ceb07="" class="btn-contact">Contact</a>
                 </div>
                 <div class="content__wrapper">
-                    <h1>Browse movies</h1>
+                    <h1>Browse movies</h1>Search by Make, Model or Keyword
+                    
                 </div>
                 <div class="input__wrapper">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -29,6 +30,44 @@
                 </div>
             </div>
         </div>
+        <div class="overlay">
+            <img src="assets/movie-img.webp" alt="background__img" class="background__img--wrapper">
+        </div>
     </div>
+    <section id="seach__results">
+        <div class="md-progress-bar md-indeterminate md-theme-default">
+            <div class="md-progress-bar-track"></div>
+            <div class="md-progress-bar-fill"></div>
+            <div class="md-progress-bar-buffer"></div>
+        </div>
+        <div id="filter" class="content__results">
+            <h1 class="search__info"><span class="black">Search results:</span></h1>
+            <div class="price__filter flex flex__col">
+                <h2><span class="black">Movie title:</span>
+                A-Z</h2>
+                <div class="slider__wrapper">
+                    <div class="slider">
+                        <div class="el__slider--runaway">
+                            <div class="el__slider--bar" style="width: 100%; left: 0%;"></div>
+                            <div class="el__slider--button-wrapper" style="left: 0%;">
+                                <div class="el__tooltip el__slider--button"></div>
+                            </div>
+                            <div class="el__slider--button-wrapper" style="left:100%;">
+                                <div class="el__tooltip el__slider--button"></div>
+                            </div>
+                            <div>
+                                <div class="el__slider--stop" style="left: 0%;"></div>
+                                <div class="el__slider--stop" style="left: 100%;"></div>
+                            </div>
+                            <div class="el__slider--mark">
+                                <div class="el__slider--marks-text" style="left: 0%;">A</div>
+                                <div class="el__slider--marks-text" style="left: 100%;">Z</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
