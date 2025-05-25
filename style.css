@@ -12,3 +12,61 @@ body, html {
     background-color: #fff;
 }
 
+/* 
+
+APP
+
+*/
+
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-col {
+    flex-direction: column !important;
+}
+
+.navbar {
+    height: 326px;
+    padding: 40px 15px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.flex__content--wrapper {
+    align-items: center;
+    flex-direction: column;
+    margin-top: -20px;
+    z-index: 2;
+}  
+
+.logo {
+    transition: all .15s ease;
+}
+
+.navbar .logo {
+    display: flex;
+    height: 40px;
+    width: 150px;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 430px;
+}
+
+.navbar .link {
+    position: relative;
+}
+
+.link {
+    filter: brightness(0) invert(1);
+}
+
+
