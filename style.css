@@ -12,6 +12,28 @@ body, html {
     background-color: #fff;
 }
 
+h1 {
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    letter-spacing: .1em;
+    font-size: 45px;
+    max-width: 1000px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+input {
+    color: rgba(0, 0, 0, .87);
+    width: 100%;
+    min-width: 800px;
+    height: 60px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+
+
 /* 
 
 APP
@@ -25,7 +47,7 @@ APP
 }
 
 .flex-col {
-    flex-direction: column !important;
+    flex-direction: column;
 }
 
 .navbar {
@@ -68,5 +90,56 @@ APP
 .link {
     filter: brightness(0) invert(1);
 }
+.content__wrapper {
+    align-items: center;
+    flex-direction: column;
+    margin-top: -20px;
+    z-index: 2;
+}
+
+.input__wrapper {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+}
 
 
+.search__wrapper {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10000;
+    padding: 0 20px 0 8px;
+    color: #6030b1;
+    font-size: 32px;
+    transition: all .2s ease;
+}
+
+.overlay {
+   background-repeat: no-repeat;
+   background-position:50%;
+   background-size: cover;
+   background-attachment: fixed;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: 1;
+}
+
+.overlay[data-v-390ceb07]:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(41, 25, 71, .83);
+    pointer-events: none;
+}

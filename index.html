@@ -9,8 +9,8 @@
     <script src="https://kit.fontawesome.com/05c666a9e6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="app">
-        <div class="navbar flex flex-col">
+    <nav id="app">
+       <div class="navbar flex flex-col">
             <div class="flex__content--wrapper">
                 <div class="logo">
                     <img data-v-390ceb07="" src="assets/whitelogo.39850b27.png" alt="blinker logo" class="logo">
@@ -20,20 +20,21 @@
                     <a data-v-390ceb07="" href="/findyourcar" class="link router-link-exact-active router-link-active">Find movies</a>
                     <a data-v-390ceb07="" class="btn-contact">Contact</a>
                 </div>
+            </div>
                 <div class="content__wrapper">
-                    <h1>Browse movies</h1>Search by Make, Model or Keyword
-                    
+                    <h1>Browse movies</h1>
                 </div>
                 <div class="input__wrapper">
-                    <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder="Search for movie">
+                    <div class="search__wrapper">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 </div>
-            </div>
         </div>
         <div class="overlay">
             <img src="assets/movie-img.webp" alt="background__img" class="background__img--wrapper">
         </div>
-    </div>
+    </nav>
     <section id="seach__results">
         <div class="md-progress-bar md-indeterminate md-theme-default">
             <div class="md-progress-bar-track"></div>
